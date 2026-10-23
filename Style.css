@@ -1,0 +1,458 @@
+
+
+/* Importação das fontes (precisa ser a 1ª linha do arquivo) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+/* =========================================================
+   1. BODY E CONFIGURAÇÕES GERAIS
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #26332D;
+    background-color: #FAF9F6;
+}
+section {
+    scroll-margin-top: 190px;
+}
+
+/* =========================================================
+   2. HEADER
+   ========================================================= */
+
+header {
+    background-color: #FFFFFF;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 1px solid #DCE9E1;
+     position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #66736C;
+}
+
+/* O <span> dentro do h1 é o nome da profissional */
+header h1 span {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #315C4A;
+    margin-bottom: 5px;
+}
+
+header.rolou{
+background-color: rgb(167, 241, 167);
+    box-shadow: 0 4px 12px rgba(0, 0,0, 0.15);
+}
+/* =========================================================
+   3. NAV (menu)
+   ========================================================= */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+nav a {
+    font-size: 13px;
+    font-weight: 500;
+    color: #66736C;
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+nav a:hover {
+    color: #315C4A;
+    border-bottom: 2px solid #C5A46D;
+}
+ #menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #315C4A;
+     cursor: pointer;
+    margin-top: 15px;
+ }
+
+/* =========================================================
+   4. SEÇÃO INÍCIO
+   ========================================================= */
+
+#inicio {
+    background-color: #DCE9E1;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+#inicio div {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#inicio h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #315C4A;
+    margin-bottom: 30px;
+}
+
+#inicio img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+     /* max-height: 400px; */
+    object-fit: contain;
+    border-radius: 20px;
+    /* border: 6px solid #FFFFFF; */
+    margin: 0 auto 30px auto;
+}
+
+#inicio p {
+    font-size: 17px;
+    color: #26332D;
+    max-width: 600px;
+    margin: 0 auto 35px auto;
+}
+
+
+/* =========================================================
+   5. BOTÕES (links de agendamento)
+   ========================================================= */
+
+#inicio a,
+#contatos a {
+    display: inline-block;
+    background-color: #315C4A;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 14px 35px;
+    border-radius: 30px;
+}
+
+#inicio a:hover,
+#contatos a:hover {
+    background-color: #6B8E7B;
+}
+#contatos a.instagram-link {
+    background-color: transparent;
+    color: #315C4A;
+    border: 2px solid #315C4A;
+    padding: 12px 33px;
+    margin-left: 10px;
+}
+
+#contatos a.instagram-link:hover {
+    background-color: #315C4A;
+    color: #FFFFFF;
+}
+
+.instagram-link i {
+    margin-right: 8px;
+}
+
+/* =========================================================
+   6. TÍTULOS DAS SEÇÕES (h3)
+   ========================================================= */
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #315C4A;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   7. SEÇÃO SOBRE
+   ========================================================= */
+
+#sobre {
+    background-color: #FAF9F6;
+    padding: 70px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#sobre p {
+    font-size: 16px;
+    color: #66736C;
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   8. SEÇÃO ESPECIALIDADES
+   ========================================================= */
+
+#especialidades {
+    background-color: #EFE8DC;
+    padding: 70px 20px;
+}
+
+#especialidades h3 {
+    max-width: 1000px;
+    margin: 0 auto 30px auto;
+}
+
+#especialidades ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto 30px auto;
+}
+
+#especialidades li {
+    background-color: #FFFFFF;
+    width: 230px;
+    padding: 15px 20px;
+    border-radius: 12px;
+    border-left: 3px solid #6B8E7B;
+    font-size: 15px;
+    font-weight: 500;
+    color: #26332D;
+}
+
+#especialidades p {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 15px;
+    color: #66736C;
+}
+
+
+/* =========================================================
+   9. SEÇÃO TRATAMENTOS
+   ========================================================= */
+
+#tratamento {
+    background-color: #FAF9F6;
+    padding: 70px 20px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* Cada parágrafo vira um cartão */
+#tratamento p {
+    background-color: #FFFFFF;
+    border: 1px solid #DCE9E1;
+    border-radius: 12px;
+    padding: 22px 25px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #66736C;
+}
+
+/* O <span> é o nome da técnica */
+#tratamento span {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    font-weight: 600;
+    color: #315C4A;
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   10. SEÇÃO DEPOIMENTOS
+   ========================================================= */
+
+#depoimento {
+    background-color: #315C4A;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+#depoimento p {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    line-height: 1.6;
+    color: #DCE9E1;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   11. SEÇÃO CONTATOS
+   ========================================================= */
+
+#contatos {
+    background-color: #DCE9E1;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+#contatos p {
+    font-size: 16px;
+    color: #26332D;
+    max-width: 500px;
+    margin: 0 auto 10px auto;
+}
+
+#contatos a {
+    margin-top: 25px;
+}
+
+
+/* =========================================================
+   12. RESPONSIVIDADE — TABLET (até 768px)
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 span {
+        font-size: 25px;
+    }
+
+    nav {
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        margin-top: 0;
+        transition: max-height 0.4s ease, opacity 0.3s ease, margin-top 0.4s ease, visibility 0.4s;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+       nav.aberto {
+      max-height: 400px;
+        opacity: 1;
+        visibility: visible;
+        margin-top: 20px;
+    }
+      #menu {
+        display: block;
+        margin: 15px auto 0 auto;
+    }
+   
+
+    #inicio,
+    #sobre,
+    #especialidades,
+    #tratamento,
+    #depoimento,
+    #contatos {
+        padding: 50px 15px;
+    }
+
+    #inicio h2 {
+        font-size: 34px;
+    }
+
+    /* #inicio img {
+        width: 180px;
+        height: auto;
+    } */
+
+    h3 {
+        font-size: 25px;
+    }
+
+    #especialidades li {
+        width: 100%;
+    }
+
+    #depoimento p {
+        font-size: 20px;
+    }
+}
+
+
+/* =========================================================
+   13. RESPONSIVIDADE — CELULAR (até 480px)
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    #inicio h2 {
+        font-size: 28px;
+    }
+
+    /* #inicio img {
+        width: 150px;
+        height: auto;
+    } */
+
+    #inicio p {
+        font-size: 15px;
+    }
+
+    #inicio a,
+    #contatos a {
+        padding: 12px 28px;
+        font-size: 14px;
+    }
+
+        nav a {
+        font-size: 12px;
+    }
+
+    /* NOVO: mostra o botão e esconde o menu */
+    #menu {
+        display: block;
+        margin: 15px auto 0 auto;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /* NOVO: quando o JS adiciona a classe "aberto", o menu volta */
+    nav.aberto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h3 {
+        font-size: 22px;
+    }
+
+    #depoimento p {
+        font-size: 18px;
+    }
+}
